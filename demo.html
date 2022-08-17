@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>AR.js demo</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <!--    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>-->
+    <!--    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>-->
+
+    <!--    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>-->
+    <!--    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>-->
+
+    <!--    <script>-->
+    <!--        window.onload = (event) => {-->
+    <!--            function handleRotation() {-->
+    <!--                console.log("rotate");-->
+    <!--            }-->
+
+    <!--            const scene = document.querySelector(".scene");-->
+    <!--            const apple = document.querySelector(".apple");-->
+    <!--            scene.addEventListener("onefingermove", () => console.log("hello"));-->
+
+    <!--            console.log(scene)-->
+    <!--        };-->
+
+
+    <!--    </script>-->
+</head>
+
+<body style="margin: 0; overflow: hidden;">
+
+<a-scene
+        class="scene"
+        vr-mode-ui="enabled: false"
+        arjs="trackingMethod:best; sourceType: webcam; debugUIEnabled: false;"
+        embedded
+        id="scene"
+>
+    <!--    <a-marker preset="hiro">-->
+    <a-entity
+            class="apple"
+            gltf-model="./apple/scene.gltf"
+            scale="0.01 0.01 0.01"
+            position="0 1 -5"
+            animation="property: rotation; easing: linear; to: 0 360 0; loop: true; dur:6000"
+    ></a-entity>
+
+    <!--    </a-marker>-->
+    <!--    <a-entity camera></a-entity>-->
+</a-scene>
+</body>
+</html>
