@@ -4,10 +4,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AR.js experiment</title>
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-        <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <!--        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>-->
+        <script src="./lib/aframe.1.0.4.min.js"></script>
+        <!--        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>-->
+        <script src="./lib/aframe-ar-nft.js"></script>
+        <!--        <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>-->
+        <script src="./lib/gestures.js"></script>
+        <!--        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>-->
+        <script src="./lib/aframe-extras.6.1.1.js"></script>
 
         <script>
             window.onload = () => {
@@ -39,14 +43,6 @@
             <a-assets>
                 <a-asset-item id="butterfly" src="./butterfly2/scene.gltf"></a-asset-item>
             </a-assets>
-
-            <!--    <a-entity-->
-            <!--            class="butterfly"-->
-            <!--            gltf-model="#butterfly"-->
-            <!--            animation-mixer-->
-            <!--            scale="1 1 1"-->
-            <!--            position="0 0 -10"-->
-            <!--    ></a-entity>-->
 
             <!--
         rotation-reader is active by default (this makes it possible to rotate phone and object stays fixed)
