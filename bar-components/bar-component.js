@@ -26,7 +26,6 @@ AFRAME.registerComponent("bar-component", {
                 >
                 </a-box>
                 <a-text color="${data.color}" value="Some Value" font="sourcecodepro" text="" position="-0.55 -0.24"></a-text>
-<!--                <a-text color="${data.color}" value="Some Value" position="-0.5 -0.3 0" font="sourcecodepro" text=""></a-text>-->
                 <a-cylinder
                     color="${data.color}"
                     position="0 ${data.value + indicatorHeight / 2} 0"
