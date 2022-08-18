@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>AR.js experiment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>-->
+        <script src="./lib/aframe.1.0.4.min.js"></script>
+        <!--        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>-->
+        <script src="./lib/aframe-ar-nft.js"></script>
+        <!--        <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>-->
+        <!--        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>-->
+        <script src="./lib/aframe-extras.6.1.1.js"></script>
+        <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    </head>
+
+    <body style="margin: 0; overflow: hidden">
+        <a-scene embedded vr-mode-ui="enabled: false" arjs="trackingMethod:best; sourceType: webcam; debugUIEnabled: false;">
+            <a-box
+                color="deeppink"
+                depth="0.1"
+                height="2"
+                width="0.1"
+                position="-1.42 1.49338 -4"
+                opacity="0.7"
+                material=""
+                geometry="height: 1.5"
+            >
+                <a-text color="deeppink" width="3.57" value="Poor kid :(" position="-0.43 -0.87175 0" font="sourcecodepro" text=""></a-text>
+            </a-box>
+            <a-box color="lime" depth="0.1" height="7" width="0.1" position="0 4.22373 -4" opacity="0.7" material="" geometry="">
+                <a-text color="lime" width="3.57" value="$$Rich kid$$" position="-0.45262 -3.6204 0" font="sourcecodepro" text=""></a-text>
+            </a-box>
+
+            <a-box color="cyan" depth="0.1" height="3" width="0.1" position="1.47534 2.16725 -4" opacity="0.7" material="" geometry="">
+                <a-text color="cyan" width="3.57" value="Average kid$" position="-0.35859 -1.56 0" font="sourcecodepro" text=""></a-text>
+            </a-box>
+        </a-scene>
+    </body>
+</html>
+<!--position="-4.0 0.9 -4.0"-->
