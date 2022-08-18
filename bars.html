@@ -16,25 +16,199 @@
 
     <body style="margin: 0; overflow: hidden">
         <a-scene embedded vr-mode-ui="enabled: false" arjs="trackingMethod:best; sourceType: webcam; debugUIEnabled: false;">
-            <a-box
-                color="deeppink"
-                depth="0.1"
-                height="2"
-                width="0.1"
-                position="-1.42 1.49338 -4"
-                opacity="0.7"
-                material=""
-                geometry="height: 1.5"
-            >
-                <a-text color="deeppink" width="3.57" value="Poor kid :(" position="-0.43 -0.87175 0" font="sourcecodepro" text=""></a-text>
-            </a-box>
-            <a-box color="lime" depth="0.1" height="7" width="0.1" position="0 4.22373 -4" opacity="0.7" material="" geometry="">
-                <a-text color="lime" width="3.57" value="$$Rich kid$$" position="-0.45262 -3.6204 0" font="sourcecodepro" text=""></a-text>
-            </a-box>
+            <a-entity position="-6.0 0 0" rotation="0 90 0" visible="">
+                <a-box color="#03522D" depth="0.2" height="1" width="0.2" position="0 0.7 0" opacity="0.7" material="" geometry=""> </a-box>
+                <a-text color="#03522D" value="Some Value" position="-0.5 0 0" font="sourcecodepro" text=""></a-text>
 
-            <a-box color="cyan" depth="0.1" height="3" width="0.1" position="1.47534 2.16725 -4" opacity="0.7" material="" geometry="">
-                <a-text color="cyan" width="3.57" value="Average kid$" position="-0.35859 -1.56 0" font="sourcecodepro" text=""></a-text>
-            </a-box>
+                <a-cylinder
+                    color="#03522D"
+                    position="0 1.35384 0"
+                    height="1"
+                    material=""
+                    geometry="height: 0.3; radius: 0.006"
+                ></a-cylinder>
+                <a-cylinder
+                    color="#03522D"
+                    position="0.19842 1.50068 -0.00487"
+                    height="1"
+                    material=""
+                    geometry="height: 0.4; radius: 0.006"
+                    rotation="0 0 -90"
+                ></a-cylinder>
+                <a-text
+                    color="#03522D"
+                    position="0.48613 1.43675 0"
+                    font="sourcecodepro"
+                    text="anchor: left; value: 10; baseline: bottom"
+                ></a-text>
+            </a-entity>
+
+            <a-entity position="-5.73 0 -3.08" rotation="0 70 0" visible="">
+                <a-box color="#A8B21C" depth="0.2" height="2" width="0.2" position="0 1.2 0" opacity="0.7" material="" geometry=""> </a-box>
+                <a-text color="#A8B21C" value="Some Value" position="-0.5 0 0" font="sourcecodepro" text=""></a-text>
+
+                <a-cylinder
+                    color="#A8B21C"
+                    position="0 2.35384 0"
+                    height="1"
+                    material=""
+                    geometry="height: 0.3; radius: 0.006"
+                ></a-cylinder>
+                <a-cylinder
+                    color="#A8B21C"
+                    position="0.19842 2.50068 -0.00487"
+                    height="1"
+                    material=""
+                    geometry="height: 0.4; radius: 0.006"
+                    rotation="0 0 -90"
+                ></a-cylinder>
+                <a-text
+                    color="#A8B21C"
+                    position="0.48613 2.43675 0"
+                    font="sourcecodepro"
+                    text="anchor: left; value: 20; baseline: bottom"
+                ></a-text>
+            </a-entity>
+
+            <a-entity position="-3.53 0 -5.57" rotation="0 30 0" visible="">
+                <a-box color="#E71C57" depth="0.2" height="3" width="0.2" position="0 1.7 0" opacity="0.7" material="" geometry=""> </a-box>
+                <a-text color="#E71C57" value="Some Value" position="-0.5 0 0" font="sourcecodepro" text=""></a-text>
+
+                <a-cylinder
+                    color="#E71C57"
+                    position="0 3.35384 0"
+                    height="1"
+                    material=""
+                    geometry="height: 0.3; radius: 0.006"
+                ></a-cylinder>
+                <a-cylinder
+                    color="#E71C57"
+                    position="0.19842 3.50068 -0.00487"
+                    height="1"
+                    material=""
+                    geometry="height: 0.4; radius: 0.006"
+                    rotation="0 0 -90"
+                ></a-cylinder>
+                <a-text
+                    color="#E71C57"
+                    position="0.48613 3.43675 0"
+                    font="sourcecodepro"
+                    text="anchor: left; value: 30; baseline: bottom"
+                ></a-text>
+            </a-entity>
+
+            <!--            mid-->
+            <a-entity position="0 0 -6">
+                <a-box color="#29BA74" depth="0.2" height="4" width="0.2" position="0 2.2 0" opacity="0.7" material="" geometry=""> </a-box>
+
+                <a-text position="-0.5 0 0" color="#29BA74" value="Some value" font="sourcecodepro"></a-text>
+
+                <!--                <a-entity line="start: 0 4 0; end: 0 4.5 0; color: #29BA74"></a-entity>-->
+                <!--                <a-entity line="start: 0 4.5 0; end: 0.3 4.5 0; color: #29BA74"></a-entity>-->
+
+                <a-cylinder
+                    color="#29BA74"
+                    position="0 4.35384 0"
+                    height="1"
+                    material=""
+                    geometry="height: 0.3; radius: 0.006"
+                ></a-cylinder>
+                <a-cylinder
+                    color="#29BA74"
+                    position="0.19842 4.50068 -0.00487"
+                    height="1"
+                    material=""
+                    geometry="height: 0.4; radius: 0.006"
+                    rotation="0 0 -90"
+                ></a-cylinder>
+                <a-text
+                    color="#29BA74"
+                    position="0.48613 4.43675 0"
+                    font="sourcecodepro"
+                    text="anchor: left; value: 40; baseline: bottom"
+                ></a-text>
+            </a-entity>
+
+            <a-entity position="3.53 0 -5.57" rotation="0 -30 0" visible="">
+                <a-box color="#30C1D7" depth="0.2" height="5" width="0.2" position="0 2.7 0" opacity="0.7" material="" geometry=""> </a-box>
+                <a-text color="#30C1D7" value="Some Value" position="-0.5 0 0" font="sourcecodepro" text=""></a-text>
+
+                <a-cylinder
+                    color="#30C1D7"
+                    position="0 5.35384 0"
+                    height="1"
+                    material=""
+                    geometry="height: 0.3; radius: 0.006"
+                ></a-cylinder>
+                <a-cylinder
+                    color="#30C1D7"
+                    position="0.19842 5.50068 -0.00487"
+                    height="1"
+                    material=""
+                    geometry="height: 0.4; radius: 0.006"
+                    rotation="0 0 -90"
+                ></a-cylinder>
+                <a-text
+                    color="#30C1D7"
+                    position="0.48613 5.43675 0"
+                    font="sourcecodepro"
+                    text="anchor: left; value: 50; baseline: bottom"
+                ></a-text>
+            </a-entity>
+
+            <a-entity position="5.73 0 -3.08" rotation="0 -70 0" visible="">
+                <a-box color="#197A56" depth="0.2" height="6" width="0.2" position="0 3.2 0" opacity="0.7" material="" geometry=""> </a-box>
+                <a-text color="#197A56" value="Some Value" position="-0.5 0 0" font="sourcecodepro" text=""></a-text>
+
+                <a-cylinder
+                    color="#197A56"
+                    position="0 6.35384 0"
+                    height="1"
+                    material=""
+                    geometry="height: 0.3; radius: 0.006"
+                ></a-cylinder>
+                <a-cylinder
+                    color="#197A56"
+                    position="0.19842 6.50068 -0.00487"
+                    height="1"
+                    material=""
+                    geometry="height: 0.4; radius: 0.006"
+                    rotation="0 0 -90"
+                ></a-cylinder>
+                <a-text
+                    color="#197A56"
+                    position="0.48613 6.43675 0"
+                    font="sourcecodepro"
+                    text="anchor: left; value: 60; baseline: bottom"
+                ></a-text>
+            </a-entity>
+
+            <a-entity position="6 0 0" rotation="0 -90 0">
+                <a-box color="#03522D" depth="0.2" height="7" width="0.2" position="0 3.7 0" opacity="0.7" material="" geometry=""> </a-box>
+                <a-text color="#03522D" value="Some Value" position="-0.5 0 0" font="sourcecodepro" text=""></a-text>
+
+                <a-cylinder
+                    color="#03522D"
+                    position="0 7.35384 0"
+                    height="1"
+                    material=""
+                    geometry="height: 0.3; radius: 0.006"
+                ></a-cylinder>
+                <a-cylinder
+                    color="#03522D"
+                    position="0.19842 7.50068 -0.00487"
+                    height="1"
+                    material=""
+                    geometry="height: 0.4; radius: 0.006"
+                    rotation="0 0 -90"
+                ></a-cylinder>
+                <a-text
+                    color="#03522D"
+                    position="0.48613 7.43675 0"
+                    font="sourcecodepro"
+                    text="anchor: left; value: 70; baseline: bottom"
+                ></a-text>
+            </a-entity>
         </a-scene>
     </body>
 </html>

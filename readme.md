@@ -20,3 +20,10 @@ use the hack that emits a `markerFound` event.
 ##Docs
 - <a href="https://ar-js-org.github.io/AR.js-Docs/">AR.js docs</a>
 - <a href="https://aframe.io/docs/1.3.0/introduction/">A-frame</a>
+
+##Fonts
+https://msdf-bmfont.donmccurdy.com/
+
+
+
+QWERTZUIOPASDFGHJKLYXCVBNMqwertzuioplkjhgfdsayxcvbnm,.-1234567890
