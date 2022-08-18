@@ -1,49 +1,46 @@
 <html>
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>AR.js experiment</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>AR.js experiment</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script>
+        <script>
+            // gesture.js is only active while the object's marker is active.
+            // to hack this and make gesture.js always active, we emit a markerFound event
+            window.onload = () => {
+                setTimeout(() => {
+                    let event = new Event("markerFound", { bubbles: true });
+                    document.querySelector("a-scene").dispatchEvent(event);
+                }, 2000);
+            };
+        </script>
+    </head>
 
-        // gesture.js is only active while the object's marker is active.
-        // to hack this and make gesture.js always active, we emit a markerFound event
-        window.onload = () => {
-            setTimeout(() => {
-                let event = new Event("markerFound", {bubbles: true});
-                document.querySelector("a-scene").dispatchEvent(event);
-            }, 2000);
-        }
-    </script>
-</head>
+    <body style="margin: 0; overflow: hidden">
+        <a-scene
+            embedded
+            vr-mode-ui="enabled: false"
+            arjs="trackingMethod:best; sourceType: webcam; debugUIEnabled: false;"
+            gesture-detector
+        >
+            <a-entity
+                class="apple"
+                gltf-model="./apple/scene.gltf"
+                scale="0.015 0.015 0.015"
+                position="0 -2 -10"
+                gesture-handler="minScale: 0.25; maxScale: 10"
+            ></a-entity>
 
-<body style="margin: 0; overflow: hidden;">
-
-<a-scene
-        embedded
-        vr-mode-ui="enabled: false"
-        arjs="trackingMethod:best; sourceType: webcam; debugUIEnabled: false;"
-        gesture-detector
->
-    <a-entity
-            class="apple"
-            gltf-model="./apple/scene.gltf"
-            scale="0.015 0.015 0.015"
-            position="0 -2 -10"
-            gesture-handler="minScale: 0.25; maxScale: 10"
-    ></a-entity>
-
-    <!--
-        rotation-reader is active by default (this makes it possible to rotate phone and object stays fixed)
-        look-controls="touchEnabled: false;" disables look-controls via touch gestures
-        (look-controls="enabled: false;" seems to break rotation-reader)
-    -->
-    <a-camera look-controls="touchEnabled: false;"></a-camera>
-
-</a-scene>
-</body>
+            <!--
+            rotation-reader is active by default (this makes it possible to rotate phone and object stays fixed)
+            look-controls="touchEnabled: false;" disables look-controls via touch gestures
+            (look-controls="enabled: false;" seems to break rotation-reader)
+             -->
+            <a-camera look-controls="touchEnabled: false;"></a-camera>
+        </a-scene>
+    </body>
 </html>
